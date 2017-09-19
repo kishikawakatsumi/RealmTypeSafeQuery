@@ -1,0 +1,13 @@
+SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator appletvos appletvsimulator;
+
+APPLICATION_EXTENSION_API_ONLY = NO;
+
+LD_RUNPATH_SEARCH_PATHS[sdk=iphone*] = $(inherited) @executable_path/Frameworks @loader_path/Frameworks;
+LD_RUNPATH_SEARCH_PATHS[sdk=appletv*] = $(inherited) @executable_path/Frameworks @loader_path/Frameworks;
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks;
+
+CODE_SIGN_IDENTITY[sdk=macosx*] = Mac Developer;
+OTHER_CODE_SIGN_FLAGS[sdk=macosx*] = --deep;
+
+DEVELOPMENT_TEAM = 27AEDK3C9F;
+

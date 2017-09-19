@@ -1,0 +1,36 @@
+language: objective-c
+osx_image: xcode9
+script:
+- $(ACTION)
+env:
+  matrix:
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'iphonesimulator' -destination 'name=iPhone 4s,OS=8.4' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'iphonesimulator' -destination 'name=iPhone 4s,OS=9.3' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'iphonesimulator' -destination 'name=iPhone 5s,OS=10.3.1' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'iphonesimulator' -destination 'name=iPhone 7,OS=11.0' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'appletvsimulator' -destination 'name=Apple TV 1080p,OS=9.0' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'appletvsimulator' -destination 'name=Apple TV 1080p,OS=10.0' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'appletvsimulator' -destination 'name=Apple TV 1080p,OS=11.0' test
+  - ACTION=xcodebuild -workspace RealmTypeSafeQuery.xcworkspace -scheme RealmTypeSafeQuery
+    -configuration 'Release' ENABLE_TESTABILITY=YES
+    -sdk 'macosx' test
+  global:
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
+branches:
+  only:
+  - master

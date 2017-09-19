@@ -6,14 +6,7 @@
 //  Copyright © 2017 Kishikawa Katsumi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-//! Project version number for RealmTypeSafeQuery.
 FOUNDATION_EXPORT double RealmTypeSafeQueryVersionNumber;
-
-//! Project version string for RealmTypeSafeQuery.
 FOUNDATION_EXPORT const unsigned char RealmTypeSafeQueryVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <RealmTypeSafeQuery/PublicHeader.h>
-
-
