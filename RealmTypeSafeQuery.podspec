@@ -14,13 +14,13 @@ Pod::Spec.new do |spec|
                        realm.objects(Person.self).filter(\Dog.name == "John") // Compile error
                        ```
                     DESC
-  spec.homepage = 'https://realm.io'
+  spec.homepage = 'https://github.com/kishikawakatsumi/RealmTypeSafeQuery'
   spec.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  spec.author = { 'Realm' => 'help@realm.io' }
-  spec.social_media_url = 'https://twitter.com/realm'
+  spec.author = { 'Kishikawa Katsumi' => 'kishikawakatsumi@mac.com' }
+  spec.social_media_url = 'https://twitter.com/k_katsumi'
 
   spec.requires_arc = true
-  spec.source = { git: 'https://github.com/realm/RealmTypeSafeQuery.git', tag: "v#{spec.version}", submodules: true }
+  spec.source = { git: 'https://github.com/kishikawakatsumi/RealmTypeSafeQuery.git', tag: "v#{spec.version}", submodules: true }
   spec.source_files = 'RealmTypeSafeQuery/*.{h,swift}'
 
   spec.dependency 'RealmSwift', '~> 2.10.0'
