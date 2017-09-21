@@ -1,30 +1,52 @@
-# RealmSafeQuery
+# RealmTypeSafeQuery
+
+<p align="center">
+    <a href="https://travis-ci.org/kishikawakatsumi/RealmTypeSafeQuery">
+        <img src="https://travis-ci.org/kishikawakatsumi/RealmTypeSafeQuery.svg?branch=master&style=flat"
+             alt="Build Status">
+    </a>
+    <a href="https://codecov.io/gh/kishikawakatsumi/RealmTypeSafeQuery">
+        <img src="https://codecov.io/gh/kishikawakatsumi/RealmTypeSafeQuery/branch/master/graph/badge.svg" alt="Codecov" />
+    </a>
+    <a href="https://cocoapods.org/pods/RealmTypeSafeQuery">
+        <img src="https://img.shields.io/cocoapods/v/RealmTypeSafeQuery.svg?style=flat"
+             alt="Pods Version">
+    </a>
+    <a href="http://cocoapods.org/pods/RealmTypeSafeQuery/">
+        <img src="https://img.shields.io/cocoapods/p/RealmTypeSafeQuery.svg?style=flat"
+             alt="Platforms">
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat"
+             alt="Carthage Compatible">
+    </a>
+</p>
 
 A type-safe Realm query extensions using Swift 4's Smart KeyPaths.
 
 ## Requirements
-RealmSafeQuery is written in Swift 4.
+RealmTypeSafeQuery is written in Swift 4.
 
 ## Installation
 
 ### CocoaPods
-RealmSafeQuery is available through [CocoaPods](https://cocoapods.org). To install
+RealmTypeSafeQuery is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RealmSafeQuery'
+pod 'RealmTypeSafeQuery'
 ```
 
 ### Carthage
 For [Carthage](https://github.com/Carthage/Carthage), add the following to your `Cartfile`:
 
 ```ogdl
-github "kishikawakatsumi/RealmSafeQuery"
+github "kishikawakatsumi/RealmTypeSafeQuery"
 ```
 
 ## Description
 
-RealmSafeQuery provides type safety, code completion and avoidance of typos against `NSPredicate` queries.
+RealmTypeSafeQuery provides type safety, code completion and avoidance of typos against `NSPredicate` queries.
 
 ### Before
 

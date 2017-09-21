@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
-  spec.name = 'RealmSafeQuery'
-  spec.version = '0.5.0'
+  spec.name = 'RealmTypeSafeQuery'
+  spec.version = '0.6.0'
   spec.summary = 'A type-safe Realm query extensions using Swift 4 Smart KeyPaths'
   spec.description = <<-DESC
-                       RealmSafeQuery provides type safety, code completion and avoidance of typos against `NSPredicate` queries.
+                       RealmTypeSafeQuery provides type safety, code completion and avoidance of typos against `NSPredicate` queries.
 
                        Examples:
                        ```swift
@@ -20,8 +20,8 @@ Pod::Spec.new do |spec|
   spec.social_media_url = 'https://twitter.com/realm'
 
   spec.requires_arc = true
-  spec.source = { git: 'https://github.com/realm/RealmSafeQuery.git', tag: "v#{spec.version}", submodules: true }
-  spec.source_files = 'RealmSafeQuery/*.{h,swift}'
+  spec.source = { git: 'https://github.com/realm/RealmTypeSafeQuery.git', tag: "v#{spec.version}", submodules: true }
+  spec.source_files = 'RealmTypeSafeQuery/*.{h,swift}'
 
   spec.dependency 'RealmSwift', '~> 2.10.0'
 
