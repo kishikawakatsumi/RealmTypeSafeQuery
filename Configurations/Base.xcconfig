@@ -1,4 +1,5 @@
-CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer;
+CODE_SIGN_IDENTITY[sdk=iphone*] = iPhone Developer;
+CODE_SIGNING_REQUIRED[sdk=macosx] = NO;
 DEVELOPMENT_TEAM = ;
 
 IPHONEOS_DEPLOYMENT_TARGET = 8.0;
