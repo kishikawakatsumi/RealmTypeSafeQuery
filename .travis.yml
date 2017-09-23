@@ -69,12 +69,6 @@ jobs:
       -sdk macosx -destination 'platform=OS X,arch=x86_64' -derivedDataPath build
       -enableCodeCoverage YES ENABLE_TESTABILITY=YES
       test-without-building
-  - stage: carthage
-    install:
-    - brew update
-    - brew outdated carthage || brew upgrade carthage
-    script:
-    - carthage build --no-skip-current
 env:
   global:
   - LANG=en_US.UTF-8
