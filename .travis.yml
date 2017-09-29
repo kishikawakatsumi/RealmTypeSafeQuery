@@ -7,14 +7,14 @@ jobs:
   include:
   - stage: build
     script:
-    - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
+    - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
       -sdk iphonesimulator -destination 'name=iPhone 4s,OS=8.4' -derivedDataPath build
       -enableCodeCoverage YES ENABLE_TESTABILITY=YES ONLY_ACTIVE_ARCH=NO
       build-for-testing
-    - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
+    - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
       -sdk appletvsimulator -derivedDataPath build -enableCodeCoverage YES ENABLE_TESTABILITY=YES
       build-for-testing
-    - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
+    - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION"
       -sdk macosx -derivedDataPath build -enableCodeCoverage YES ENABLE_TESTABILITY=YES
       build-for-testing
   - &test
