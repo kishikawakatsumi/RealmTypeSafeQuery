@@ -20,6 +20,14 @@
         <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat"
              alt="Carthage Compatible">
     </a>
+    <a href="https://swift.org/">
+        <img src="https://img.shields.io/badge/Swift-3.x-orange.svg?style=flat"
+             alt="Swift 3.x">
+    </a>
+    <a href="https://swift.org/">
+        <img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat"
+             alt="Swift 4.0">
+    </a>
 </p>
 
 A type-safe Realm query extensions using Swift 4's Smart KeyPaths.
