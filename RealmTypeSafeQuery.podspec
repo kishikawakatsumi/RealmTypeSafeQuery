@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.source = { git: 'https://github.com/kishikawakatsumi/RealmTypeSafeQuery.git', tag: "v#{spec.version}", submodules: true }
   spec.source_files = 'RealmTypeSafeQuery/*.{h,swift}'
 
-  spec.dependency 'RealmSwift', '~> 2.10.0'
+  spec.dependency 'RealmSwift', '~> 2.10'
 
   spec.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
                                'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
