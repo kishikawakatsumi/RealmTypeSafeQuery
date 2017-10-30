@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'RealmTypeSafeQuery'
-  spec.version = '0.6.0'
+  spec.version = '0.6.1'
   spec.summary = 'A type-safe Realm query extensions using Swift 4 Smart KeyPaths'
   spec.description = <<-DESC
                        RealmTypeSafeQuery provides type safety, code completion and avoidance of typos against `NSPredicate` queries.
