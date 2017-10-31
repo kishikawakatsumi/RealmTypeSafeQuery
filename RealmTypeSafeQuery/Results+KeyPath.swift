@@ -10,15 +10,15 @@ import Foundation
 import RealmSwift
 
 extension Results {
-    public func filter<P: Predicate>(_ expression: @autoclosure () -> P) -> Results<T> where P.ObjectType == T {
+    public func filter<P: Predicate>(_ expression: @autoclosure () -> P) -> Results<Element> where P.ObjectType == Element {
         return filter(expression().predicate)
     }
 
-    public func sorted<RealmObject: Object, RealmProperty: RealmPropertyType>(byKeyPath keyPath: KeyPath<RealmObject, RealmProperty>, ascending: Bool = true) -> Results<T> {
+    public func sorted<RealmObject: Object, RealmProperty: RealmPropertyType>(byKeyPath keyPath: KeyPath<RealmObject, RealmProperty>, ascending: Bool = true) -> Results<Element> {
         return sorted(by: [SortDescriptor(keyPath: keyPath._kvcKeyPathString!, ascending: ascending)])
     }
 
-    public func sorted<RealmObject: Object, RealmProperty: RealmPropertyType>(byKeyPath keyPath: KeyPath<RealmObject, RealmProperty?>, ascending: Bool = true) -> Results<T> {
+    public func sorted<RealmObject: Object, RealmProperty: RealmPropertyType>(byKeyPath keyPath: KeyPath<RealmObject, RealmProperty?>, ascending: Bool = true) -> Results<Element> {
         return sorted(by: [SortDescriptor(keyPath: keyPath._kvcKeyPathString!, ascending: ascending)])
     }
 }
